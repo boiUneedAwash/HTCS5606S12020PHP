@@ -6,13 +6,18 @@ $t = date("Y-m-d"); //https://www.php.net/manual/en/function.date.php
 $t1 = date("H:i:s");
 echo $t." ".$t1;
 
-$hour = date("H");
-$minutes = date("i");
+$hour = intval(date("H"));
+$minutes = intval(date("i"));
+echo "<p>h: ".$hour."</p>";
+echo "<p>m: ".$minutes."</p>";
 
-if ($hour<"10" && $minutes < "10"){
+if ($hour=>10 && $minutes <= 20){ //&& means and || means or.
+    //work before 10:20
     echo "<p>"."Have a good morning"."</p>";
-}elseif ($hour<"20"){
+}elseif ($hour<20){
+    //work before 21:00
     echo "<p>"."Have a good day"."</p>";
 }else {
+    //work after 21:00 to 10:20
     echo "<p>"."Have a good night"."</p>";
 }
