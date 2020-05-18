@@ -6,4 +6,4 @@ $who = "James";
 echo $grating;
 echo $who;
 
-echo "<p>".$grating."".$who."</p>"; //dot means merge strings in php
+echo "<h>".$grating."".$who."</h>"; //dot means merge strings in php
