@@ -10,9 +10,9 @@ echo "<h1>".$grating." ".$who."</h1>"; //dot means merge strings in php
 
 $x = 4 ;
 $y = 5 ;
-echo "<p1>""x = ".$x"</p1>";
-echo "<p2>""y = ".$y"</p2>";
-echo "<p3>""z = x + y ".($x + $y)"</p3>";
+echo "<p>"."x = ".$x."</p>";
+echo "<p>"."y = ".$y."</p>";
+echo "<p>"."z = x + y ".($x + $y)."</p>";
 
 //length of string
 echo "<br>".strlen($grating)." string length<br>";
