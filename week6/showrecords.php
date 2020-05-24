@@ -8,7 +8,7 @@ $connection = new mysqli($server, $user, $pwd, $database);
 if ($connection->connect_error){
     echo $connection->connect_error;
 }else{
-    echo "Connection Created";
+    echo "Connection Created ";
 }
 
 $sql = "select * from Users"; // create query
