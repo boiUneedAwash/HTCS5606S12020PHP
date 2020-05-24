@@ -10,3 +10,15 @@ if ($connection->connect_error){
 }else{
     echo "Connection Created";
 }
+
+$sql = "select * from Users"; // create query
+$result = $connection->query($sql); // run the query to this connection
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo $row['id'] . " " . $row['username'] . " " . $row['password'] . " " . $row['name'] . "<br>";
+    }
+}else{
+    echo "No result in the table";
+}
+$connection->close();
