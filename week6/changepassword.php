@@ -19,6 +19,9 @@ if ($connection->connect_error) {
     echo "Connection Created";
 }
 
+session_start();
+$_SESSION["username"] = $username;
+
 $sql = "select password from Users where username='something'";
 $result = $connection->query($sql);
 if ($result->num_rows == 1) {
