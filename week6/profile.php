@@ -14,7 +14,7 @@ if ($connection->connect_error){
 session_start();
 $username = $_SESSION["username"];
 
-$sql = "select * from Users where username='something'";
+$sql = "select * from Users where username='$username'";
 $result = $connection->query($sql);
 if ($result->num_rows == 1){
     while ($row = $result->fetch_assoc()){
