@@ -27,6 +27,8 @@ if (isset($_POST["username"])){
         while ($row = $result->fetch_assoc()){
             if ($row["password"] == $password){ //check password
                 echo "access granted";
+                session_start();
+                $_SESSION["username"] = $username;
                 // if login we allow user to do somthing
                 ?>
                 <p><a href="profile.php">profile</a></p>
