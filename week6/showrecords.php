@@ -1,24 +1,14 @@
 <?php
-$server = "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$user = "dt7if5fn5w2fs141";
-$pwd = "rmycl3gp6mqjkscj";
-$database = "yvj349jjrtc4w5h1";
+include_once "dbconnection.php";
+$records = showRecords();
+//print_r($records);
 
-$connection = new mysqli($server, $user, $pwd, $database);
-if ($connection->connect_error){
-    echo $connection->connect_error;
-}else{
-    echo "Connection Created ";
+$i = 0;
+while ($i < sizeof($records)){
+//    print_r($records[$i]); //arrayname[index] --> value
+    $record = $records[$i]; //inside each record, we have place 0 for id, place 1 for username, place 2 for password, place 3 for name
+    ?>
+    <p><?php echo $record[0]; ?> <?php echo $record[1]; ?> <?php echo $record[2]; ?> <?php echo $record[3]; ?></p>
+    <?php
+    $i = $i + 1;
 }
-
-$sql = "select * from Users"; // create query
-$result = $connection->query($sql); // run the query to this connection
-
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        echo $row['id'] . " " . $row['username'] . " " . $row['password'] . " " . $row['name'] . "<br>";
-    }
-}else{
-    echo "No result in the table";
-}
-$connection->close();
