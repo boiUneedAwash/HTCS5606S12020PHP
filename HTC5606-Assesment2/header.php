@@ -20,7 +20,8 @@
             $catagories = $user->viewCatagories();
             $i=0;
             while ($i < sizeof($catagories)){
-                echo "<li><a href='contact.php'>".$catagory[$i]->name."</a>,</li>"
+                $catagory = $catagories[$i];
+                echo "<li><a href='products.php?catagoryID=".$catagory->id."'>".$catagory->name."</a>,</li>";
                 $i = $i + 1;
             }
             ?>
