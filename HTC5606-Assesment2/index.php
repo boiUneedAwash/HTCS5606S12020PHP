@@ -21,7 +21,7 @@
     <nav>
         <ul id="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.php">Products</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
         </ul>
@@ -56,8 +56,8 @@
     <p>If your struggling to figure out what your pet needs you can call or email us to find exactly what you need</p>
     <a href="contact.php" class="boxed-btn3">Contact Us</a>
 </div>
-<footer id="footer">
-    <p>Copyright &copy; 2020 Unitec</p>
-</footer>
+<?php
+include_once "footer.php";
+?>
 </body>
 </html>
