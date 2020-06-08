@@ -20,16 +20,16 @@
     </div>
     <nav>
         <ul id="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
         </ul>
     </nav>
 </header>
 <h3>The best in <br> <span>Online Pet Shopping</span></h3>
 <p>What ever you need, it's all here.</p><br>
-<a href="contact.html">Contact Us</a>
+<a href="contact.php">Contact Us</a>
 <div>
     <img src="img/banner/dog.png" width="500px" length="500px">
     <h3>Products for Every Pet</h3>
@@ -54,7 +54,7 @@
     <h3><span>We Want To Help You </span> <br> Find The Best For Your Pet </h3>
     <img src="img/about/pet_care.png" width="300px" length="300px">
     <p>If your struggling to figure out what your pet needs you can call or email us to find exactly what you need</p>
-    <a href="contact.html" class="boxed-btn3">Contact Us</a>
+    <a href="contact.php" class="boxed-btn3">Contact Us</a>
 </div>
 <footer id="footer">
     <p>Copyright &copy; 2020 Unitec</p>

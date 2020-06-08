@@ -15,9 +15,9 @@
     </div>
     <nav>
         <ul id="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
         </ul>
     </nav>
