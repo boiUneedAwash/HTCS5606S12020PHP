@@ -13,12 +13,14 @@ function leftDividerAnimation() {
 //Left Divider Animation end
 
 //add product to cart
-function addProductToCart(product_name, product_price) {
+function addProductToCart(e) {
     cart = $("#rightDiv");
-    name = e.name;
-    price = e.price;
-    qty = ???;
+    name1 = $(e).attr("name");
+    price = $(e).attr("price");
+    qty = $(e).prev().val();
 
+    cart.append("<p>Name: "+name1+"  Price: "+Number(price)*Number(qty) +"</p>");
+    total = total + Number(price)*Number(qty);
 }
 // function addProductToCart(buttonID) {
 //     cart = document.getElementById("rightDiv");

@@ -13,22 +13,6 @@
 <?php
 include_once "header.php";
 ?>
-<header>
-    <div>
-        <ul>
-            <li>0800 456 3589</li>
-            <li>Mon - Sat 10:00 - 7:00</li>
-        </ul>
-    </div>
-    <nav>
-        <ul id="navigation">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
-        </ul>
-    </nav>
-</header>
 
 <div>
     <div>
@@ -47,7 +31,9 @@ include_once "header.php";
                 <p>Price: <?php echo $product->price;?></p>
                 <p>
                     <input placeholder="qty" type="number">
-                    <button onclick="addProductToCart(this)">Add to cart</button>
+                    <button onclick="addProductToCart(this)"
+                            name="<?php echo $product->name; ?>"
+                            price = "<?php echo $product->price; ?>">Add to cart</button>
                 </p>
             </div>
             <?php
