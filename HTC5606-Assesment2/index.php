@@ -11,26 +11,9 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <div id = "header">
-        <div id="headerPicture">
-            <img src="img/banner/bradcam.png"/>
-        </div>
-    <div>
-        <ul>
-            <li>0800 456 3589</li>
-            <li>Mon - Sat 10:00 - 7:00</li>
-        </ul>
-    </div>
-    <nav>
-        <ul id="navigation">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="products.php">Products</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="https://www.unitec.ac.nz/">Unitec</a></li>
-        </ul>
-    </nav>
-</header>
+<?php
+include_once "header.php";
+?>
 <h3>The best in <br> <span>Online Pet Shopping</span></h3>
 <p>What ever you need, it's all here.</p><br>
 <a href="contact.php">Contact Us</a>
