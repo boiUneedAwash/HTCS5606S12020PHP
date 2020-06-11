@@ -43,7 +43,7 @@ include_once "header.php";
             $product = $products[$i];
             ?>
             <div class="product">
-                <p><img src="img<?php echo $product->picture;?>"></p>
+                <p><img src="img/<?php echo $product->picture;?>"></p>
                 <p>Price: <?php echo $product->price;?></p>
                 <p>
                     <input placeholder="qty" type="number">
