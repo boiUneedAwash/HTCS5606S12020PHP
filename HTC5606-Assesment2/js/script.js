@@ -13,35 +13,42 @@ function leftDividerAnimation() {
 //Left Divider Animation end
 
 //add product to cart
-function addProductToCart(buttonID) {
-    cart = document.getElementById("rightDiv");
-    switch (buttonID) {
-        case "addCollar":
-            qty = document.getElementById("collarQty").value;
-            addHTML = document.createElement("p");
-            addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Collar: "+qty+" Price: <strong class='price'>" +(24.99*Number(qty)) +"</strong>";
-            console.log(addHTML);
-            cart.insertBefore(addHTML, document.getElementById("checkOut"));
-            break;
-        case "addFlea":
-            qty = document.getElementById("fleaQty").value;
-            addHTML = document.createElement("p");
-            addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Flea Flea: "+qty+" Price: <strong class='price'>"+(7.99*Number(qty)) +"</strong>";
-            console.log(addHTML);
-            cart.insertBefore(addHTML, document.getElementById("checkOut"));
-            break;
-        case "addKennel":
-            qty = document.getElementById("kennelQty").value;
-            addHTML = document.createElement("p");
-            addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Kennel: "+qty+" Price: <strong class='price'>"+(199.99*Number(qty)) +"</strong>";
-            console.log(addHTML);
-            cart.insertBefore(addHTML, document.getElementById("checkOut"));
-            break;
-    }
+function addProductToCart(product_name, product_price) {
+    cart = $("#rightDiv");
+    name = e.name;
+    price = e.price;
+    qty = ???;
+
 }
+// function addProductToCart(buttonID) {
+//     cart = document.getElementById("rightDiv");
+//     switch (buttonID) {
+//         case "addCollar":
+//             qty = document.getElementById("collarQty").value;
+//             addHTML = document.createElement("p");
+//             addHTML.className="orderedProducts";
+//             addHTML.innerHTML = "Collar: "+qty+" Price: <strong class='price'>" +(24.99*Number(qty)) +"</strong>";
+//             console.log(addHTML);
+//             cart.insertBefore(addHTML, document.getElementById("checkOut"));
+//             break;
+//         case "addFlea":
+//             qty = document.getElementById("fleaQty").value;
+//             addHTML = document.createElement("p");
+//             addHTML.className="orderedProducts";
+//             addHTML.innerHTML = "Flea Flea: "+qty+" Price: <strong class='price'>"+(7.99*Number(qty)) +"</strong>";
+//             console.log(addHTML);
+//             cart.insertBefore(addHTML, document.getElementById("checkOut"));
+//             break;
+//         case "addKennel":
+//             qty = document.getElementById("kennelQty").value;
+//             addHTML = document.createElement("p");
+//             addHTML.className="orderedProducts";
+//             addHTML.innerHTML = "Kennel: "+qty+" Price: <strong class='price'>"+(199.99*Number(qty)) +"</strong>";
+//             console.log(addHTML);
+//             cart.insertBefore(addHTML, document.getElementById("checkOut"));
+//             break;
+//     }
+// }
 
 //Popup Invoice
 

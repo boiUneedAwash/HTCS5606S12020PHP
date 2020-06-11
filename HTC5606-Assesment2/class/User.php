@@ -54,12 +54,12 @@ class User
     public function showProductsByCatagory($catagoryID)
     {
         $conn = (new DB())->connection;
-        $sql = "select * from Product where catagoryID=" . $catagoryID; // . means two string
+        $sql = "select * from Product where catagoryID=".$catagoryID; // . means two string
         $products = array();
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                $product = new Product($row["id"], $row["name"], $row["price"], $row["description"], $row["catagoryID"]);
+                $product = new Product($row["id"], $row["name"], $row["price"], $row["picture"], $row["description"], $row["catagoryID"]);
                 array_push($products, $product);
             }
         }

@@ -15,7 +15,7 @@
             <li><a href="products.php">Products</a></li>
 <!--            <li><a href="contact.php">Contact</a></li>-->
             <?php
-            include_once "class/User.php"
+            include_once "class/User.php";
             $user = new User(null, "", "", "");
             $catagories = $user->viewCatagories();
             $i=0;
